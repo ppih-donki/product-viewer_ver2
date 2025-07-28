@@ -3,17 +3,36 @@ body {
   font-family: sans-serif;
   margin: 2em;
 }
+.controls label {
+  margin-right: 1em;
+}
 #mapContainer {
   position: relative;
+  margin-top: 1em;
 }
 .marker {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background: red;
   color: white;
   text-align: center;
   border-radius: 50%;
-  line-height: 24px;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.highlight {
+  background: gold !important;
+  color: black;
+}
+#productList, #errorList {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+  background: #f9f9f9;
+}
+#productList div {
+  margin: 0.3em 0;
+  cursor: pointer;
 }
