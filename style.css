@@ -1,0 +1,19 @@
+
+body {
+  font-family: sans-serif;
+  margin: 2em;
+}
+#mapContainer {
+  position: relative;
+}
+.marker {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: red;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 24px;
+  font-size: 14px;
+}
