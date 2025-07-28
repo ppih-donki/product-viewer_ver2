@@ -8,19 +8,31 @@
 </head>
 <body>
   <h1>棚マップビューア</h1>
-  <label>店舗：
-    <select id="storeSelector"><option>店舗選択</option></select>
-  </label>
-  <label>フロア：
-    <select id="floorSelector"><option>フロア選択</option></select>
-  </label>
-  <label>画像種別：
-    <select id="imageTypeSelect">
-      <option value="map">map</option>
-      <option value="cad">cad</option>
-    </select>
-  </label>
-  <div id="mapContainer" style="margin-top:20px;"></div>
+  <div class="controls">
+    <label>店舗：
+      <select id="storeSelector"><option>店舗選択</option></select>
+    </label>
+    <label>フロア：
+      <select id="floorSelector"><option>フロア選択</option></select>
+    </label>
+    <label>画像種別：
+      <select id="imageTypeSelect">
+        <option value="map">map</option>
+        <option value="cad">cad</option>
+      </select>
+    </label>
+    <label>誤登録商品CSV:
+      <input type="file" id="csvInput" accept=".csv">
+    </label>
+    <button id="exportBtn">CSV出力</button>
+  </div>
+  <div id="mapContainer"></div>
+  <h2>選択された棚の商品一覧</h2>
+  <div id="productList"></div>
+  <h2>誤登録商品リスト（出力対象）</h2>
+  <ul id="errorList"></ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <script src="viewer_core.js"></script>
 </body>
 </html>
